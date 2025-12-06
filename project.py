@@ -4,10 +4,6 @@ import numpy as np
 # 读取图片
 img = cv2.imread("D:\opencv-project\opencv-test\cv_img_1.jpg")
 
-if img is None:
-    print("请把图片改名为 product.jpg")
-    exit()
-
 # 创建窗口
 cv2.namedWindow("美化调整")
 
@@ -55,4 +51,5 @@ cv2.waitKey(0)
 final = update()
 cv2.imwrite("调整后.jpg", final)
 print("✅ 已保存")
+
 cv2.destroyAllWindows()
